@@ -4,7 +4,8 @@
   "description": "test share",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel src -d build",
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -21,10 +22,7 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
+    "npmpack": "github:Asaesoft/pack",
     "react": "^17.0.2"
-  },
-  "scripts": {
-    "build": "babel src -d build",
-    "prepare": "npm run build"
   }
 }
